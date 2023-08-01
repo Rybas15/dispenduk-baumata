@@ -7,7 +7,9 @@ $_SESSION["page-url"] = "./";
 <!DOCTYPE html>
 <html lang="en">
 
-<head><?php require_once("../resources/dash-header.php") ?></head>
+<head>
+  <?php require_once("../resources/dash-header.php") ?>
+</head>
 
 <body>
   <?php if (isset($_SESSION["message-success"])) { ?>

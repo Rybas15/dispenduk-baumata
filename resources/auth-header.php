@@ -8,5 +8,5 @@
 <link rel="stylesheet" href="../assets/css/simple-line-icons.css">
 <link rel="stylesheet" href="../assets/css/vendor.bundle.base.css">
 <link rel="stylesheet" href="../assets/css/style-dash.css">
-<link rel="shortcut icon" href="../assets/images/logo.png" />
+<link rel="shortcut icon" href="../assets/images/logo-city.png" />
 <script src="../assets/sweetalert/dist/sweetalert2.all.min.js"></script>

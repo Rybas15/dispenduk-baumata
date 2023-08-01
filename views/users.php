@@ -51,19 +51,21 @@ $_SESSION["page-url"] = "users";
                           <th scope="col" class="text-center">#</th>
                           <th scope="col" class="text-center">Nama</th>
                           <th scope="col" class="text-center">Email</th>
+                          <th scope="col" class="text-center">Role</th>
                           <th scope="col" class="text-center">Tgl Buat</th>
                           <th scope="col" class="text-center">Tgl Ubah</th>
                           <th scope="col" class="text-center">Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <?php if (mysqli_num_rows($users) > 0) {
+                        <?php if (mysqli_num_rows($view_users) > 0) {
                           $no = 1;
-                          while ($row = mysqli_fetch_assoc($users)) { ?>
+                          while ($row = mysqli_fetch_assoc($view_users)) { ?>
                             <tr>
                               <th scope="row"><?= $no; ?></th>
                               <td><?= $row["username"] ?></td>
                               <td><?= $row["email"] ?></td>
+                              <td><?= $row["role"] ?></td>
                               <td>
                                 <div class="badge badge-opacity-success">
                                   <?php $dateCreate = date_create($row["created_at"]);
@@ -98,9 +100,21 @@ $_SESSION["page-url"] = "users";
                                               <label for="email" class="form-label">Email <small class="text-danger">*</small></label>
                                               <input type="email" name="email" value="<?= $row["email"] ?>" class="form-control text-center" id="email" placeholder="Email" required>
                                             </div>
+                                            <div class="mb-3">
+                                              <label for="id_role" class="form-label">Role <small class="text-danger">*</small></label>
+                                              <select name="id_role" class="form-select" aria-label="Default select example" required>
+                                                <option selected value="<?= $row['id_role'] ?>"><?= $row['role'] ?></option>
+                                                <?php $id_role = $row['id_role'];
+                                                $users_role = "SELECT * FROM users_role WHERE id_role!='$id_role'";
+                                                $select_ur_edit = mysqli_query($conn, $users_role);
+                                                foreach ($select_ur_edit as $row_ur) : ?>
+                                                  <option value="<?= $row_ur['id_role'] ?>"><?= $row_ur['role'] ?></option>
+                                                <?php endforeach; ?>
+                                              </select>
+                                            </div>
                                           </div>
                                           <div class="modal-footer justify-content-center border-top-0">
-                                            <input type="hidden" name="id-user" value="<?= $row["id_user"] ?>">
+                                            <input type="hidden" name="id_user" value="<?= $row["id_user"] ?>">
                                             <input type="hidden" name="usernameOld" value="<?= $row["username"] ?>">
                                             <input type="hidden" name="emailOld" value="<?= $row["email"] ?>">
                                             <button type="button" class="btn btn-secondary btn-sm rounded-0 border-0" style="height: 30px;" data-bs-dismiss="modal">Batal</button>
@@ -128,7 +142,7 @@ $_SESSION["page-url"] = "users";
                                         <div class="modal-footer justify-content-center border-top-0">
                                           <button type="button" class="btn btn-secondary btn-sm rounded-0 border-0" style="height: 30px;" data-bs-dismiss="modal">Batal</button>
                                           <form action="" method="POST">
-                                            <input type="hidden" name="id-user" value="<?= $row["id_user"] ?>">
+                                            <input type="hidden" name="id_user" value="<?= $row["id_user"] ?>">
                                             <input type="hidden" name="username" value="<?= $row["username"] ?>">
                                             <button type="submit" name="hapus-user" class="btn btn-danger btn-sm rounded-0 text-white border-0" style="height: 30px;">Hapus</button>
                                           </form>
@@ -172,6 +186,15 @@ $_SESSION["page-url"] = "users";
                     <label for="password" class="form-label">Password <small class="text-danger">*</small></label>
                     <input type="text" name="password" class="form-control text-center" id="kata-sandi" minlength="8" placeholder="Password" required>
                     <input type="button" value="Generate Password" class="btn btn-link btn-sm text-decoration-none" onclick="random_all();">
+                  </div>
+                  <div class="mb-3">
+                    <label for="id_role" class="form-label">Role <small class="text-danger">*</small></label>
+                    <select name="id_role" class="form-select" aria-label="Default select example" required>
+                      <option selected value="">Pilih Role</option>
+                      <?php foreach ($select_ur as $row_ur) : ?>
+                        <option value="<?= $row_ur['id_role'] ?>"><?= $row_ur['role'] ?></option>
+                      <?php endforeach; ?>
+                    </select>
                   </div>
                 </div>
                 <div class="modal-footer border-top-0 justify-content-center">

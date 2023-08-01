@@ -2,13 +2,13 @@
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start" style="background-color: rgb(3, 164, 237);">
     <div class="me-3">
       <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
-        <span class="icon-menu text-white"></span>
+        <span class="mdi mdi-menu text-white"></span>
       </button>
     </div>
     <div>
       <a class="navbar-brand brand-logo d-flex" href="./">
         <style>@media screen and (max-width: 400px){.img-brand{display: none;}}</style>
-        <img src="../assets/images/..." alt="Logo Brand" class="img-brand" style="width: 60px;height: 60px;">
+        <img src="../assets/images/logo-city.png" alt="Logo Brand" class="img-brand" style="width: 60px;height: 60px;">
       </a>
       <a class="nav-link navbar-brand brand-logo-mini" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
         <img class="img-xs rounded-circle" src="../assets/images/user.png" style="width: 40px;height: 40px;" alt="Profile image" />
