@@ -46,7 +46,6 @@ $_SESSION["page-url"] = "./";
                   <button type="submit" name="masuk" class="btn rounded-0 text-white" style="background-color: rgb(3, 164, 237);">Masuk</button>
                 </div>
               </form>
-              <p class="d-flex flex-nowrap justify-content-center mt-3">Kembali ke <a href="../" class="text-decoration-none" style="margin-left: 5px;">Beranda</a></p>
             </div>
           </div>
         </div>

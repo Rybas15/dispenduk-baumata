@@ -7,13 +7,13 @@
       </a>
     </li>
     <?php if ($_SESSION['data-user']['role'] == 1) { ?>
-      <li class="nav-item nav-category">Kelola Pengguna</li>
+      <!-- <li class="nav-item nav-category">Kelola Pengguna</li>
       <li class="nav-item">
         <a class="nav-link" style="cursor: pointer;" onclick="window.location.href='users'">
           <i class="mdi mdi-account-multiple-outline menu-icon"></i>
           <span class="menu-title">Users</span>
         </a>
-      </li>
+      </li> -->
     <?php } ?>
     <li class="nav-item nav-category">Data Desa</li>
     <li class="nav-item">

@@ -82,10 +82,10 @@
           Tampilan <strong>UI (User Interface)</strong> dan <strong>Console</strong> dapat anda ubah dengan melihat berbagai macam template dari vendor Netmedia Framecode
         </p>
         <code><i class="bi bi-list"></i>
-          <a href="https://www.free-css.com/free-css-templates" target="_blank" style="text-decoration: none;">Template UI</a>
+          <a href="#" target="_blank" style="text-decoration: none;">Template UI</a>
         </code>
         <code><i class="bi bi-list"></i>
-          <a href="https://freshdesignweb.com/free-admin-templates/" target="_blank" style="text-decoration: none;">Template Console</a>
+          <a href="#" target="_blank" style="text-decoration: none;">Template Console</a>
         </code>
         <p>
           Jika anda ingin melanjutkan ke <strong>Console</strong> bisa klik link dibawah ini:

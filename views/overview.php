@@ -14,6 +14,10 @@
 
 <div class="row">
 
+  <div class="col-lg-12 mt-3">
+    <h2 class="text-center">SISTEM INFORMASI PENDUDUK DESA BAUMATA UTARA</h2>
+  </div>
+
   <div class="col-md-12">
     <div class="row">
       <div class="col-lg-3">
