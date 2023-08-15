@@ -40,6 +40,7 @@ $_SESSION["page-url"] = "kelahiran";
                   <div>
                     <div class="btn-wrapper">
                       <a href="tambah-kelahiran" class="btn btn-primary text-white me-0 border-0 rounded-0 shadow"><i class="mdi mdi-plus"></i> Tambah</a>
+                      <a href="export-kelahiran" target="_blank" class="btn btn-primary text-white me-0 border-0 rounded-0 shadow"><i class="mdi mdi-export"></i> Cetak</a>
                     </div>
                   </div>
                 </div>

@@ -40,6 +40,7 @@ $_SESSION["page-url"] = "pindah";
                   <div>
                     <div class="btn-wrapper">
                       <a href="#" class="btn btn-primary text-white me-0 btn-sm rounded-0" data-bs-toggle="modal" data-bs-target="#tambah">Tambah</a>
+                      <a href="export-pindah" target="_blank" class="btn btn-primary text-white me-0 border-0 rounded-0 shadow"><i class="mdi mdi-export"></i> Cetak</a>
                     </div>
                   </div>
                 </div>

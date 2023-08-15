@@ -40,6 +40,7 @@ $_SESSION["page-url"] = "kartu-keluarga";
                   <div>
                     <div class="btn-wrapper">
                       <a href="#" class="btn btn-primary text-white me-0 border-0 rounded-0 shadow" data-bs-toggle="modal" data-bs-target="#tambah"><i class="mdi mdi-plus"></i> Tambah</a>
+                      <a href="export-kk" target="_blank" class="btn btn-primary text-white me-0 border-0 rounded-0 shadow"><i class="mdi mdi-export"></i> Cetak</a>
                     </div>
                   </div>
                 </div>

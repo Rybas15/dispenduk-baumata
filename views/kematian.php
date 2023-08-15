@@ -40,6 +40,7 @@ $_SESSION["page-url"] = "kematian";
                   <div>
                     <div class="btn-wrapper">
                       <a href="tambah-kematian" class="btn btn-primary text-white me-0 border-0 rounded-0 shadow"><i class="mdi mdi-plus"></i> Tambah</a>
+                      <a href="export-kematian" target="_blank" class="btn btn-primary text-white me-0 border-0 rounded-0 shadow"><i class="mdi mdi-export"></i> Cetak</a>
                     </div>
                   </div>
                 </div>
